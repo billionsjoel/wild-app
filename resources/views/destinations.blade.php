@@ -110,7 +110,7 @@
                         </div>
                     </div><!-- /.col-lg-4 -->
                 @empty
-                    <div class="container w-25">
+                    <div class="container w-75">
                         <p class="alert alert-warning p-4"> There are no destination's at the moment. Check back later.
                         </p>
                     </div>
