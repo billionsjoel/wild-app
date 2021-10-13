@@ -110,7 +110,7 @@
                         </div>
                     </div><!-- /.col-lg-4 -->
                 @empty
-                    <div class="container">
+                    <div class="container w-25">
                         <p class="alert alert-warning p-4"> There are no Safari's at the moment. Check back later. </p>
                     </div>
                 @endforelse
