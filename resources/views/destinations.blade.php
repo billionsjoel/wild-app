@@ -110,7 +110,7 @@
                         </div>
                     </div><!-- /.col-lg-4 -->
                 @empty
-                    <p> There are no destination's at the moment. Check back later. </p>
+                    <p class="alert alert-warning p-4"> There are no destination's at the moment. Check back later. </p>
                 @endforelse
                 <!-- START THE FEATURETTES -->
 
