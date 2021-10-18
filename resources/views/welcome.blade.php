@@ -4,6 +4,15 @@
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+    <style>
+        .content {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+
+    </style>
 @endsection
 
 @section('content')
@@ -22,42 +31,54 @@
     </header>
 
     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-        <h1 class="display-5 fw-bold">Centered hero</h1>
+        <svg role="img" class="bi text-success" width="44" height="44" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            {{-- <title>Gradle</title> --}}
+            <path
+                d="M22.695 4.297a3.807 3.807 0 0 0-5.29-.09.368.368 0 0 0 0 .533l.46.47a.363.363 0 0 0 .474.032 2.182 2.182 0 0 1 2.86 3.291c-3.023 3.02-7.056-5.447-16.211-1.083a1.24 1.24 0 0 0-.534 1.745l1.571 2.713a1.238 1.238 0 0 0 1.681.461l.037-.02-.029.02.688-.384a16.083 16.083 0 0 0 2.193-1.635.384.384 0 0 1 .499-.016.357.357 0 0 1 .016.534 16.435 16.435 0 0 1-2.316 1.741H8.77l-.696.39a1.958 1.958 0 0 1-.963.25 1.987 1.987 0 0 1-1.726-.989L3.9 9.696C1.06 11.72-.686 15.603.26 20.522a.363.363 0 0 0 .354.296h1.675a.363.363 0 0 0 .37-.331 2.478 2.478 0 0 1 4.915 0 .36.36 0 0 0 .357.317h1.638a.363.363 0 0 0 .357-.317 2.478 2.478 0 0 1 4.914 0 .363.363 0 0 0 .358.317h1.627a.363.363 0 0 0 .363-.357c.037-2.294.656-4.93 2.42-6.25 6.108-4.57 4.502-8.486 3.088-9.9zm-6.229 6.901l-1.165-.584a.73.73 0 1 1 1.165.587z" />
+        </svg>
+        <h1 class="display-5 fw-bold">Tourism</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
-                system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <p class="lead mb-4">Known as the pearl of a Africa, Uganda's stunning scenery and warm, friendly
+                people offer unique experiences in one of the most remarkable countries in the world. It is blessed with
+                extraordinary biodiversity, with incredible wildlife living throughout its volcanoes, montane rainforest and
+                sweeping plains.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                <button type="button" class="btn btn-success btn-lg px-4 gap-3">Read more</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="#contact">Contact Us</button>
             </div>
         </div>
     </div>
 
     <div class="row align-items-md-stretch">
         <div class="col-md-6">
-            <div class="h-100 p-5 text-white bg-dark rounded-3">
-                <h2>Backround image</h2>
-                <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look.
-                    Then, mix and match with additional component themes and more.</p>
-                <button class="btn btn-outline-light" type="button">Example button</button>
+            <div class="h-100">
+                <img class="rounded-3" src="{{ url('images/canopy-walk.jpeg') }}" class="img-fluid" alt="...">
             </div>
         </div>
         <div class="col-md-6">
-            <div class="h-100 p-5 bg-light border rounded-3">
-                <h2>The Great Rift Valley</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi itaque fugiat rem deleniti alias
-                    eaque sit ratione maxime, eveniet inventore neque natus voluptate ab, dolore aspernatur fuga
-                    commodi, facere veritatis?
-                    Obcaecati nesciunt incidunt maiores impedit, tempora sequi, distinctio sed recusandae dolor numquam
-                    laudantium cumque vitae ducimus, officiis ratione iusto velit magni itaque? Mollitia, aperiam. Ad
-                    nihil modi ut impedit excepturi?
-                    Eveniet quidem expedita dolorum, nostrum sunt officiis rerum consectetur vitae incidunt nulla
-                    aperiam, pariatur dignissimos doloremque id. Beatae nulla illo amet nisi totam in eligendi, eveniet
-                    vel non vitae modi?
-                <p>
-                    <button class="btn btn-outline-secondary" type="button">View Activities</button>
+            <div class="h-100 p-5 bg-light border rounded-3 text-center">
+                <div class="content h-100 mt-4 ">
+                    <h2>The Great Rift Valley</h2>
+                    <p class="mt-4">As guardians of many iconic species, Rwanda is committed to safeguarding their
+                        existence within the
+                        four
+                        National Parks.
+                    <p>
+                    <p>
+                        We are constantly working to ensure we can live in sustainable harmony with our environment, with a
+                        clean and green mindset. We banned plastic bags in 2008, and our lands are possibly the cleanest in
+                        Africa thanks to efforts throughout every community.
+                    </p>
+                    <p>
+                        Ten percent of the income derived from gorilla, safari and other tourist permits, as well as park
+                        fees,
+                        is spent in partnership with local communities to change lives for the better.
+                    <p>
+                        <a href="{{ url('gallery') }}" class="btn btn-outline-success align-center mt-4"
+                            type="button">View
+                            Activities</a>
+                </div>
             </div>
         </div>
     </div>
