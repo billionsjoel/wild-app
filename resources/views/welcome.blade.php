@@ -12,6 +12,20 @@
             flex-direction: column;
         }
 
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
     </style>
 @endsection
 
