@@ -221,7 +221,7 @@
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="{{ url('images/uganda-airlines.jpeg') }}" class="d-block mx-lg-auto img-fluid"
+                <img src="{{ url('images/uganda-airline.jpeg') }}" class="d-block mx-lg-auto img-fluid"
                     alt="Uganda Airlines" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
