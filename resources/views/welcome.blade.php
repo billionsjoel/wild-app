@@ -170,38 +170,51 @@
     </div>
 
     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-        <h1 class="display-5 fw-bold">Centered hero</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
-                system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <svg role="img" class="bi text-success" width="64" height="64" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Monkey</title>
+            <path
+                d="M21.1627 13.1843a2.8517 2.8517 0 0 0-.6778.0841c-.8438-3.3181-3.5478-5.8376-6.9172-6.4452a8.3933 8.3933 0 0 0-.4407-.0668c.0259-.8255.0636-1.7791 1.2781-2.6369l-.1918-.4838s-2.3708.7349-2.6391 2.7598c-.1175-.5507-1.2209-1.2403-1.7673-1.3707l-.2717.4384s.7242.3621.9009 1.361c-3.3691.6056-6.0743 3.1229-6.9204 6.4398-1.5194-.376-3.056.5508-3.432 2.0703-.376 1.5194.5508 3.056 2.0703 3.432a2.8346 2.8346 0 0 0 1.7195-.1142 8.6821 8.6821 0 0 0 .9203 1.7123l2.3524-1.5852c-.6381-.8071-1.0206-1.9884-1.0873-3.1736-.07-1.2931.2446-2.5755 1.0701-3.3298 1.7016-1.4483 3.5561-.7877 4.7135.6002h.3114c1.1606-1.388 3.0173-2.0475 4.7135-.6002.8244.7543 1.1401 2.0378 1.0701 3.3298-.0656 1.1853-.4481 2.3664-1.0873 3.1736l2.3524 1.5852a8.6854 8.6854 0 0 0 .9224-1.7123c1.4551.5751 3.1009-.1384 3.676-1.5935s-.1384-3.1009-1.5935-3.676a2.8349 2.8349 0 0 0-1.0448-.1983zM2.7861 16.8482a.8362.8362 0 0 1 0-1.6724.8442.8442 0 0 1 .4688.1444c.0071.4391.0369.8776.0894 1.3136-.1472.1346-.3738.2329-.5582.2144zm18.4273 0a.8361.8361 0 0 1-.5582-.2155 12.679 12.679 0 0 0 .0894-1.3136.8352.8352 0 0 1 1.304.6929c.0078.4574-.3823.8581-.8352.8362z" />
+        </svg>
+        <h1 class="display-5 fw-bold mb-4">Responsible Toursim</h1>
+        <div class="col-lg-6 mx-auto mt-4">
+            <p class="mb-4">As guardians of many iconic species, Uganda is committed to safeguarding their
+                existence within the National Parks.
+            </p>
+            <p>
+                We are constantly working to ensure we can live in sustainable harmony with our environment, with a clean
+                and green mindset. We banned plastic bags, and our lands are possibly one of the cleanest in Africa. Thanks
+                to efforts throughout every community.
+            </p>
+            <p>
+                A percentage of the income derived from gorilla, safari and other tourist permits, as well as park fees, is
+                spent in partnership with local communities to change lives for the better.</p>
         </div>
     </div>
 
     <div class="row align-items-md-stretch">
         <div class="col-md-6">
-            <div class="h-100 p-5 text-white bg-dark rounded-3">
-                <h2>Backround image</h2>
-                <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look.
-                    Then, mix and match with additional component themes and more.</p>
-                <button class="btn btn-outline-light" type="button">Example button</button>
+            <div class="h-100">
+                <img class="rounded-3" src="{{ url('images/two-monkeys.jpeg') }}" class="img-fluid" alt="...">
             </div>
         </div>
         <div class="col-md-6">
             <div class="h-100 p-5 bg-light border rounded-3">
-                <h2>The Great Rift Valley</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi itaque fugiat rem deleniti alias
-                    eaque sit ratione maxime, eveniet inventore neque natus voluptate ab, dolore aspernatur fuga
-                    commodi, facere veritatis?
-                    Obcaecati nesciunt incidunt maiores impedit, tempora sequi, distinctio sed recusandae dolor numquam
-                    laudantium cumque vitae ducimus, officiis ratione iusto velit magni itaque? Mollitia, aperiam. Ad
-                    nihil modi ut impedit excepturi?
-                    Eveniet quidem expedita dolorum, nostrum sunt officiis rerum consectetur vitae incidunt nulla
-                    aperiam, pariatur dignissimos doloremque id. Beatae nulla illo amet nisi totam in eligendi, eveniet
-                    vel non vitae modi?
-                <p>
-                    <button class="btn btn-outline-secondary" type="button">View Activities</button>
+                <div class="content h-100 mt-4 text-center">
+                    <h2 class="mt-4">Responsible Tourism</h2>
+                    <p class="mt-4">
+                        The west of Uganda forms a branch of the Great Rift Valley known as the Albertine Rift. It has many
+                        unique, endemic species and is bursting with life.
+                    </p>
+                    <p>
+                        Chimpanzees, golden monkeys and other primates live alongside hundreds of brightly-coloured birds,
+                        orchids and butterflies.
+                    </p>
+                    <p>
+                        And that is only scratching the surface…
+                    <p>
+                        <button class="btn btn-outline-success mt-4" type="button">View Activities</button>
+                </div>
             </div>
         </div>
     </div>
