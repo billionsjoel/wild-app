@@ -60,17 +60,17 @@
             <div class="h-100 p-5 bg-light border rounded-3 text-center">
                 <div class="content h-100 mt-4 ">
                     <h2>The Great Rift Valley</h2>
-                    <p class="mt-4">As guardians of many iconic species, Rwanda is committed to safeguarding their
+                    <p class="mt-4 lead">As guardians of many iconic species, Rwanda is committed to safeguarding their
                         existence within the
                         four
                         National Parks.
                     <p>
-                    <p>
+                    <p class="lead">
                         We are constantly working to ensure we can live in sustainable harmony with our environment, with a
                         clean and green mindset. We banned plastic bags in 2008, and our lands are possibly the cleanest in
                         Africa thanks to efforts throughout every community.
                     </p>
-                    <p>
+                    <p class="lead">
                         Ten percent of the income derived from gorilla, safari and other tourist permits, as well as park
                         fees,
                         is spent in partnership with local communities to change lives for the better.
@@ -178,15 +178,15 @@
         </svg>
         <h1 class="display-5 fw-bold mb-4">Responsible Toursim</h1>
         <div class="col-lg-6 mx-auto mt-4">
-            <p class="mb-4">As guardians of many iconic species, Uganda is committed to safeguarding their
+            <p class="mb-4 lead">As guardians of many iconic species, Uganda is committed to safeguarding their
                 existence within the National Parks.
             </p>
-            <p>
+            <p class="lead">
                 We are constantly working to ensure we can live in sustainable harmony with our environment, with a clean
                 and green mindset. We banned plastic bags, and our lands are possibly one of the cleanest in Africa. Thanks
                 to efforts throughout every community.
             </p>
-            <p>
+            <p class="lead">
                 A percentage of the income derived from gorilla, safari and other tourist permits, as well as park fees, is
                 spent in partnership with local communities to change lives for the better.</p>
         </div>
@@ -202,15 +202,15 @@
             <div class="h-100 p-5 bg-light border rounded-3">
                 <div class="content h-100 mt-4 text-center">
                     <h2 class="mt-4">Responsible Tourism</h2>
-                    <p class="mt-4">
+                    <p class="mt-4 lead">
                         The west of Uganda forms a branch of the Great Rift Valley known as the Albertine Rift. It has many
                         unique, endemic species and is bursting with life.
                     </p>
-                    <p>
+                    <p class="lead">
                         Chimpanzees, golden monkeys and other primates live alongside hundreds of brightly-coloured birds,
                         orchids and butterflies.
                     </p>
-                    <p>
+                    <p class="lead">
                         And that is only scratching the surface…
                     <p>
                         <button class="btn btn-outline-success mt-4" type="button">View Activities</button>
@@ -226,13 +226,13 @@
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">Meet in Uganda</h1>
-                <p class="mt-4">Uganda is an excellent hub for meetings and events, with world-class facilities –
+                <p class="lead mt-4">Uganda is an excellent hub for meetings and events, with world-class facilities –
                     the Kampala, Mbarara, Gulu, Jinja and Hoima with Hotels like the serena Hotel where Convention Centre
                     chose to host the Commonwealth Heads of Government Summit in past years.
                     Conveniently located close to Entebbe airport, the KCCA offers a premium environment for regional and
                     international conventions, exhibitions, festivals, meetings and other events.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Read more</button>
+                    <button type="button" class="btn btn-success btn-lg px-4 me-md-2">Read more</button>
                     <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
                 </div>
             </div>
