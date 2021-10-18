@@ -31,7 +31,7 @@
     </header>
 
     <div class="px-4 py-5 my-5 text-center">
-        <svg role="img" class="bi text-success" width="44" height="44" viewBox="0 0 24 24"
+        <svg role="img" class="bi text-success" width="64" height="64" viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">
             {{-- <title>Gradle</title> --}}
             <path
@@ -221,17 +221,19 @@
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                    height="500" loading="lazy">
+                <img src="{{ url('images/uganda-airlines.jpeg') }}" class="d-block mx-lg-auto img-fluid"
+                    alt="Uganda Airlines" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                    world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
-                    system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <h1 class="display-5 fw-bold lh-1 mb-3">Meet in Uganda</h1>
+                <p class="mt-4">Uganda is an excellent hub for meetings and events, with world-class facilities –
+                    the Kampala, Mbarara, Gulu, Jinja and Hoima with Hotels like the serena Hotel where Convention Centre
+                    chose to host the Commonwealth Heads of Government Summit in past years.
+                    Conveniently located close to Entebbe airport, the KCCA offers a premium environment for regional and
+                    international conventions, exhibitions, festivals, meetings and other events.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Read more</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
                 </div>
             </div>
         </div>
