@@ -95,7 +95,7 @@
                                         href="{{ url('view-edit-blog/' . $safari->id) }}">Change Image <i
                                             class="fa fa-user"></i></a></span>
                                 <span class="btn btn-sm bg-warning"><a class="text-white"
-                                        href="{{ url('view-edit-blog/' . $safari->id) }}">Edit <i
+                                        href="{{ url('view-edit-safari/' . $safari->id) }}">Edit <i
                                             class="fa fa-pen"></i></a></span>
                                 <span class="btn btn-sm bg-danger"> <a class="text-white"
                                         href="{{ url('delete-safari/' . $safari->id) }}">
@@ -111,7 +111,9 @@
                     @endforelse
                 </tbody>
             </table>
-            {{ $safaris->links() }}
+            <div class="ms-auto p-2">
+                {{ $safaris->links() }}
+            </div>
         </div>
     </div>
 

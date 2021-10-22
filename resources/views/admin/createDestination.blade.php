@@ -83,7 +83,7 @@
                                         href="{{ url('view-edit-blog/' . $destination->id) }}">Change Image <i
                                             class="fa fa-user"></i></a></span>
                                 <span class="btn btn-sm bg-warning"><a class="text-white"
-                                        href="{{ url('view-edit-blog/' . $destination->id) }}">Edit <i
+                                        href="{{ url('view-edit-destination/' . $destination->id) }}">Edit <i
                                             class="fa fa-pen"></i></a></span>
                                 <span class="btn btn-sm bg-danger"> <a class="text-white"
                                         href="{{ url('delete-destination/' . $destination->id) }}">

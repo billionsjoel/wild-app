@@ -100,4 +100,41 @@ class HomeController extends Controller
 
         return redirect('/create-safari');
     }
+
+    public function editSafari(Request $request, $id)
+    {
+        $safaris = Safari::find($id);
+
+        Safari::where('id', $id)
+      ->update([
+                'title' => request()->title,
+                'body' => request()->body,
+                'overview' => request()->overview,
+                'itenerary' => request()->itenerary,
+                'terms' => request()->terms,
+                ]);
+
+
+        session()->flash('message', 'Safari Updated Successfully! ✅');
+
+        return redirect('/create-safari');
+    }
+    public function editDestination(Request $request, $id)
+    {
+        $destination = Safari::find($id);
+
+        Destination::where('id', $id)
+      ->update([
+                'title' => request()->title,
+                'body' => request()->body,
+                //'overview' => request()->overview,
+                //'itenerary' => request()->itenerary,
+                //'terms' => request()->terms,
+                ]);
+
+
+        session()->flash('message', 'Safari Updated Successfully! ✅');
+
+        return redirect('/create-destination');
+    }
 }

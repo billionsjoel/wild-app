@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Safari;
 use App\Models\Destination;
+use Symfony\Component\Console\Descriptor\Descriptor;
 
 /*
 |--------------------------------------------------------------------------
@@ -69,14 +70,30 @@ Route::get('/create-safari', function () {
 });
 
 Route::post('/create-safari', [App\Http\Controllers\HomeController::class, 'createSafari']);
+Route::post('/edit-safari/{id}', [App\Http\Controllers\HomeController::class, 'editSafari']);
+Route::get('/view-edit-safari/{id}', function ($id) {
+//
+    $safaris = Safari::where('id', $id)->get();
+
+    return view('admin.editSafari', compact('safaris'));
+});
+
+
 
 Route::get('/create-destination', function () {
     $destinations = Destination::paginate(5);
-
     return view('admin.createDestination', compact('destinations'));
 });
 
 Route::post('/create-destination', [App\Http\Controllers\HomeController::class, 'createDestination']);
+Route::post('/edit-destination/{id}', [App\Http\Controllers\HomeController::class, 'editDestination']);
+Route::get('/view-edit-destination/{id}', function ($id) {
+//
+    $destinations = Destination::where('id', $id)->get();
+
+    return view('admin.editDestination', compact('destinations'));
+});
+
 
 Route::get('/delete-destination/{id}', [App\Http\Controllers\HomeController::class, 'deleteDestination']);
 Route::get('/delete-safari/{id}', [App\Http\Controllers\HomeController::class, 'deleteSafari']);
