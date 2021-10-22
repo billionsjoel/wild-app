@@ -52,15 +52,31 @@
             <path
                 d="M22.695 4.297a3.807 3.807 0 0 0-5.29-.09.368.368 0 0 0 0 .533l.46.47a.363.363 0 0 0 .474.032 2.182 2.182 0 0 1 2.86 3.291c-3.023 3.02-7.056-5.447-16.211-1.083a1.24 1.24 0 0 0-.534 1.745l1.571 2.713a1.238 1.238 0 0 0 1.681.461l.037-.02-.029.02.688-.384a16.083 16.083 0 0 0 2.193-1.635.384.384 0 0 1 .499-.016.357.357 0 0 1 .016.534 16.435 16.435 0 0 1-2.316 1.741H8.77l-.696.39a1.958 1.958 0 0 1-.963.25 1.987 1.987 0 0 1-1.726-.989L3.9 9.696C1.06 11.72-.686 15.603.26 20.522a.363.363 0 0 0 .354.296h1.675a.363.363 0 0 0 .37-.331 2.478 2.478 0 0 1 4.915 0 .36.36 0 0 0 .357.317h1.638a.363.363 0 0 0 .357-.317 2.478 2.478 0 0 1 4.914 0 .363.363 0 0 0 .358.317h1.627a.363.363 0 0 0 .363-.357c.037-2.294.656-4.93 2.42-6.25 6.108-4.57 4.502-8.486 3.088-9.9zm-6.229 6.901l-1.165-.584a.73.73 0 1 1 1.165.587z" />
         </svg>
-        <h1 class="display-5 fw-bold">Tourism</h1>
+        <h1 class="display-5 fw-bold">Discover East Africa</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Known as the pearl of a Africa, Uganda's stunning scenery and warm, friendly
-                people offer unique experiences in one of the most remarkable countries in the world. It is blessed with
-                extraordinary biodiversity, with incredible wildlife living throughout its volcanoes, montane rainforest and
-                sweeping plains.</p>
+            <p class="lead mb-4">Welcome to East Africa Home to the world’s greatest variety of large mammals, over
+                1,500 bird species and thousands of colorful insects and reptiles, East Africa is the ultimate safari
+                destination. But there is more than wildlife.
+                Bisected by the magnificent Great Rift Valley, this landscape encompasses lakes, islands, extinct volcanoes,
+                rivers, waterfalls, forests, game parks and game reserves, waterfalls and an immaculate Indian Ocean
+                coastline stretching more than 2,000km.
+                The variety of East Africa’s cultures and the depth of its history are often overlooked by visitors. The
+                plains of the East African interior are regarded as the cradle of mankind, while the ruined medieval cities
+                of the coast were once the great centers of maritime trade
+                East Africa has something for every taste and budget: five-star game lodges and remote jungle campsites;
+                vibrant modern cities and traditional trading towns; scuba diving on coral reefs and camel safaris in arid
+                northern Kenya; game walks on the Serengeti plains and gorilla tracking in the rainforests of Uganda; wild
+                mountain trails and the perfect palm-lined beaches. It is a region of inexhaustible fascination and variety.
+            </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <button type="button" class="btn btn-success btn-lg px-4 gap-3">Read more</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="#contact">Contact Us</button>
+                <a href="{{ url('safaris') }}" class="btn btn-outline-secondary btn-lg px-4" id="#contact">Explore</a>
+            </div>
+            <div class="overflow-hidden mt-4" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img src="{{ asset('images/ea-tiles.jpeg') }}" class="img-fluid border rounded-3 shadow-lg mb-4"
+                        alt="Example image" width="700" height="500" loading="lazy">
+                </div>
             </div>
         </div>
     </div>

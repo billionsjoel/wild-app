@@ -58,48 +58,51 @@
 
         </div>
     </div>
-    {{-- <div class="row">
-    <div class="col-sm-12">
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Author</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                @forelse ($blogs as $blog)
-                <tr>
-                    <th scope="row">{{ $blog->id }}</th>
-                    <td>{{ $blog->title }}</td>
-                    <td>{{ $blog->author }}</td>
-                    <td>{{ $blog->category }}</td>
+    <div class="row" style="margin-top:4rem; ">
+        <div class="col-sm-12">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Actions</th>
+                        <th scope="col"></th>
+                        {{-- <th scope="col">Terms & Conditions</th> --}}
+                    </tr>
+                </thead>
+                <tbody>
+                    @forelse ($destinations as $destination)
+                        <tr>
+                            <th scope="row">{{ $destination->id }}</th>
+                            <td>{{ $destination->title }}</td>
+                            {{-- <td>{{ $safari->overview }}</td>
+                            <td>{{ $safari->itenerary }}</td>
+                            <td>{{ $safari->terms }}</td> --}}
 
-                    <td><span class="btn btn-sm bg-info"><a class="text-white"
-                                href="{{ url('view-edit-blog/'.$blog->id) }}">Change Image <i
-                                    class="fa fa-user"></i></a></span>
-                        <span class="btn btn-sm bg-warning"><a class="text-white"
-                                href="{{ url('view-edit-blog/'.$blog->id) }}">Edit <i class="fa fa-pen"></i></a></span>
-                        <span class="btn btn-sm bg-danger"> <a class="text-white"
-                                href="{{ url('delete-blog/'.$blog->id) }}">
-                                delete <i class="fa fa-trash"></i></a></span>
-                    </td>
-                </tr>
-                @empty
-                <tr>
-                    <th scope="row">#</th>
-                    <td colspan="3" class="text-secondary">No records found !</td>
-                </tr>
+                            <td><span class="btn btn-sm bg-info"><a class="text-white"
+                                        href="{{ url('view-edit-blog/' . $destination->id) }}">Change Image <i
+                                            class="fa fa-user"></i></a></span>
+                                <span class="btn btn-sm bg-warning"><a class="text-white"
+                                        href="{{ url('view-edit-blog/' . $destination->id) }}">Edit <i
+                                            class="fa fa-pen"></i></a></span>
+                                <span class="btn btn-sm bg-danger"> <a class="text-white"
+                                        href="{{ url('delete-destination/' . $destination->id) }}">
+                                        delete <i class="fa fa-trash"></i></a></span>
+                            </td>
+                        </tr>
+                    @empty
+                        <tr>
+                            <th scope="row">#</th>
+                            <td colspan="3" class="text-secondary">No records found !</td>
+                        </tr>
 
-                @endforelse
-            </tbody>
-        </table>
-        {{ $blogs->links() }}
+                    @endforelse
+                </tbody>
+            </table>
+            {{ $destinations->links() }}
+        </div>
     </div>
-</div> --}}
+
 
 
 @endsection

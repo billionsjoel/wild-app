@@ -64,13 +64,19 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/create-safari', function () {
-    return view('admin.createSafari');
+    $safaris = Safari::paginate(5);
+    return view('admin.createSafari', compact('safaris'));
 });
 
 Route::post('/create-safari', [App\Http\Controllers\HomeController::class, 'createSafari']);
 
 Route::get('/create-destination', function () {
-    return view('admin.createDestination');
+    $destinations = Destination::paginate(5);
+
+    return view('admin.createDestination', compact('destinations'));
 });
 
 Route::post('/create-destination', [App\Http\Controllers\HomeController::class, 'createDestination']);
+
+Route::get('/delete-destination/{id}', [App\Http\Controllers\HomeController::class, 'deleteDestination']);
+Route::get('/delete-safari/{id}', [App\Http\Controllers\HomeController::class, 'deleteSafari']);

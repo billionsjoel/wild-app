@@ -84,4 +84,20 @@ class HomeController extends Controller
 
         return redirect('/create-destination');
     }
+    public function deleteDestination($id)
+    {
+        Destination::destroy($id);
+
+        session()->flash('message', 'Destination deleted successfully! ✅ ');
+
+        return redirect('/create-destination');
+    }
+    public function deleteSafari($id)
+    {
+        Safari::destroy($id);
+
+        session()->flash('message', 'Safari deleted successfully! ✅ ');
+
+        return redirect('/create-safari');
+    }
 }
