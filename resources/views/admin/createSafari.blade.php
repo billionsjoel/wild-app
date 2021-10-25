@@ -22,6 +22,10 @@
                 <form action="/create-safari" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
+                        <label for="title big">Safari Country<span class="require">*</span></label>
+                        <input type="text" class="form-control" name="country" />
+                    </div>
+                    <div class="form-group">
                         <label for="title big">Safari Title <span class="require">*</span></label>
                         <input type="text" class="form-control" name="title" />
                     </div>
@@ -87,8 +91,8 @@
                         <tr>
                             <th scope="row">{{ $safari->id }}</th>
                             <td>{{ $safari->title }}</td>
-                            {{-- <td>{{ $safari->overview }}</td>
-                            <td>{{ $safari->itenerary }}</td>
+                            <td>{{ $safari->country }}</td>
+                            {{-- <td>{{ $safari->itenerary }}</td>
                             <td>{{ $safari->terms }}</td> --}}
 
                             <td><span class="btn btn-sm bg-info"><a class="text-white"

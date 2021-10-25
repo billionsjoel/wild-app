@@ -30,12 +30,12 @@ class HomeController extends Controller
     public function createSafari(Request $request)
     {
         $safari = new Safari;
+        $safari->country = request()->country;
         $safari->title = request()->title;
         $safari->body = request()->body;
         $safari->overview = request()->overview;
         $safari->itenerary = request()->itenerary;
         $safari->terms = request()->terms;
-
 
         $this->validate($request, [
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',

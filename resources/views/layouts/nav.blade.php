@@ -22,12 +22,15 @@
                      <a class="nav-link" href="#">About Us</a>
                  </li>
                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="{{ url('/safaris') }}" id="dropdown04"
+                     <a class="nav-link dropdown-toggle" href="{{ url('/safaris?country=all') }}" id="dropdown04"
                          data-bs-toggle="dropdown" aria-expanded="false">Safaris</a>
                      <ul class="dropdown-menu" aria-labelledby="dropdown04">
-                         <li><a class="dropdown-item" href="{{ url('/safaris') }}">All Safaris</a></li>
-                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+                         <li><a class="dropdown-item" href="{{ url('/safaris?country=all') }}">All Safaris</a></li>
+                         <li><a class="dropdown-item" href="{{ url('/safaris?country=uganda') }}">Uganda</a></li>
+                         <li><a class="dropdown-item" href="/safaris?country=kenya">Kenya</a></li>
+                         <li><a class="dropdown-item" href="/safaris?country=rwanda">Rwanda</a></li>
+                         <li><a class="dropdown-item" href="/safaris?country=burundi">Burundi</a></li>
+                         <li><a class="dropdown-item" href="/safaris?country=tanzania">Tanzania</a></li>
                      </ul>
                  </li>
                  <li class="nav-item dropdown">

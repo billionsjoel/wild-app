@@ -21,10 +21,11 @@ Route::get('/', function () {
 });
 
 Route::get('/safaris', function () {
-    //return all safari's
-
-    $safaris = Safari::all();
-
+    if (request('country') == 'all') {
+        $safaris = Safari::all();
+    } else {
+        $safaris = Safari::Where('country', request('country'))->get();
+    }
     return view('safaris', compact('safaris'));
 });
 

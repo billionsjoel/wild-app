@@ -111,7 +111,8 @@
                     </div><!-- /.col-lg-4 -->
                 @empty
                     <div class="container w-75">
-                        <p class="alert alert-warning p-4"> There are no Safari's at the moment. Check back later. </p>
+                        <p class="alert alert-warning p-4"> There are no Safari's for this country at the moment. Check
+                            back later. </p>
                     </div>
                 @endforelse
                 <!-- START THE FEATURETTES -->
