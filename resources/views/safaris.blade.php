@@ -126,7 +126,7 @@
                                 <h5 class="card-title">{{ $safari->title }}</h5>
                                 <p class="card-text">{!! \Illuminate\Support\Str::limit($safari->body, 200) !!}</p>
                                 <p><a href="{{ url('destination?id=' . $safari->id) }}"
-                                        class="btn btn-outline-secondary card-text">Read
+                                        class="btn btn-outline-secondary card-text mt-4">Read
                                         More</a></p>
                             </div>
                         </div>
