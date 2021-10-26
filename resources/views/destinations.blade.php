@@ -122,7 +122,7 @@
                     <div class="col-lg-4 p-2">
                         <div class="card align-center" style="width: 28rem;">
                             <img class="card-img img-style"
-                                style="height:20rem; Opacity:0.4; background-image:url({{ asset('images/' . $destination->image) }}">
+                                style="height:20rem; Opacity:0.85; background-image:url({{ asset('images/' . $destination->image) }}">
                             <div class="card-img-overlay">
                                 <h5 class="card-title">{{ $destination->title }}</h5>
                                 <p class="card-text">{!! \Illuminate\Support\Str::limit($destination->body, 200) !!}</p>
