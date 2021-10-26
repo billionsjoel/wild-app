@@ -26,7 +26,6 @@
             object-fit: cover;
             object-position: 50% 50%;
         }
-
     </style>
 </head>
 

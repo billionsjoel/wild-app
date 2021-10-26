@@ -16,7 +16,16 @@
     <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
 
     <script src="{{ asset('js/app.js') }}"></script>
+    <style>
+        .img-style {
+            height: 30rem;
+            background-size: cover;
+            background-position: top;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
 
+    </style>
 
 </head>
 
@@ -97,7 +106,7 @@
             <!-- Three columns of text below the carousel -->
             <div class="row offset-1">
                 @forelse ($safaris as $safari)
-                    <div class="col-lg-3 p-2">
+                    {{-- <div class="col-lg-3 p-2">
                         <div class="card align-center" style="width: 18rem;">
                             <img src="{{ asset('images/' . $safari->image) }}" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -108,7 +117,21 @@
                                 </p>
                             </div>
                         </div>
-                    </div><!-- /.col-lg-4 -->
+                    </div> --}}
+                    <div class="col-lg-4 p-2">
+                        <div class="card align-center" style="width: 28rem;">
+                            <img class="card-img img-style"
+                                style="height:20rem; Opacity:0.4; background-image:url({{ asset('images/' . $safari->image) }}">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">{{ $safari->title }}</h5>
+                                <p class="card-text">{!! \Illuminate\Support\Str::limit($safari->body, 200) !!}</p>
+                                <p><a href="{{ url('destination?id=' . $safari->id) }}"
+                                        class="btn btn-outline-secondary card-text">Read
+                                        More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 -->
                 @empty
                     <div class="container w-75">
                         <p class="alert alert-warning p-4"> There are no Safari's for this country at the moment. Check
