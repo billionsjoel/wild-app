@@ -20,6 +20,16 @@
     </script>
 
     <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
+    <style>
+        .img-style {
+            height: 30rem;
+            background-size: cover;
+            background-position: top;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -35,6 +45,12 @@
                 @forelse ($safaris as $safari)
                     <h1 class="display-4 fst-italic">{{ $safari->title }}</h1>
                     <p class="lead my-3">{!! $safari->body !!}</p>
+                    <div class="col-sm-12">
+                        <div class="card align-center" style="width: 100%;">
+                            <img src="{{ asset('images/' . $safari->image) }}" class="card-img-top img-style"
+                                alt="...">
+                        </div>
+                    </div>
                 @empty
                     <h1 class="display-4 fst-italic">The safari you are looking for doesn't exist anymore</h1>
                     <p class="lead my-3">It has been moved or deleted. <a href="{{ url('safaris') }}"

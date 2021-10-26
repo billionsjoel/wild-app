@@ -29,21 +29,26 @@
                          <li><a class="dropdown-item" href="{{ url('/safaris?country=uganda') }}">Uganda</a></li>
                          <li><a class="dropdown-item" href="/safaris?country=kenya">Kenya</a></li>
                          <li><a class="dropdown-item" href="/safaris?country=rwanda">Rwanda</a></li>
-                         <li><a class="dropdown-item" href="/safaris?country=burundi">Burundi</a></li>
                          <li><a class="dropdown-item" href="/safaris?country=tanzania">Tanzania</a></li>
                      </ul>
                  </li>
                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
-                         aria-expanded="false">Destinations</a>
+                     <a class="nav-link dropdown-toggle" href="{{ url('/destinations?country=all') }}" id="dropdown04"
+                         data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
                      <ul class="dropdown-menu" aria-labelledby="dropdown04">
-                         <li><a class="dropdown-item" href="{{ url('/destinations') }}">All Destinations</a></li>
-                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+                         <li><a class="dropdown-item" href="{{ url('/destinations?country=all') }}">All
+                                 Destinations</a></li>
+                         <li><a class="dropdown-item" href="{{ url('/destinations?country=uganda') }}">Uganda</a>
+                         </li>
+                         <li><a class="dropdown-item" href="{{ url('/destinations?country=kenya') }}">Kenya</a></li>
+                         <li><a class="dropdown-item" href="{{ url('/destinations?country=rwanda') }}">Rwanda</a>
+                         </li>
+                         <li><a class="dropdown-item"
+                                 href="{{ url('/destinations?country=tanzania') }}">Tanzania</a></li>
                      </ul>
                  </li>
                  <li class="nav-item">
-                     <a class="nav-link" href="#">Gallery</a>
+                     <a class="nav-link" href="#">Shop/Store</a>
                  </li>
                  <li class="nav-item">
                      <a class="nav-link" href="#">Contact Us</a>

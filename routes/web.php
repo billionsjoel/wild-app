@@ -43,7 +43,12 @@ Route::get('/safari', function () {
 Route::get('/destinations', function () {
     //return destinations
 
-    $destinations = Destination::all();
+    if (request('country') == 'all') {
+        $destinations = Destination::all();
+    } else {
+        $destinations = Destination::Where('country', request('country'))->get();
+    }
+
 
     return view('destinations', compact('destinations'));
 });

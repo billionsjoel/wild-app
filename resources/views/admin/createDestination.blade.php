@@ -22,6 +22,10 @@
                 <form action="/create-destination" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
+                        <label for="title">Country <span class="require">*</span></label>
+                        <input type="text" class="form-control" name="country" />
+                    </div>
+                    <div class="form-group">
                         <label for="title">Title <span class="require">*</span></label>
                         <input type="text" class="form-control" name="title" />
                     </div>

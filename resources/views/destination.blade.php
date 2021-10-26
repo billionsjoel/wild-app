@@ -18,6 +18,15 @@
     </script>
 
     <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
+    <style>
+        .img-style {
+            height: 30rem;
+            background-size: cover;
+            background-position: top;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,7 +42,12 @@
             <div class="col-md-12 px-0">
                 @forelse ($destinations as $destination)
                     <h1 class="display-4 fst-italic">{{ $destination->title }}</h1>
-                    <img class="lead my-3" src="{{ asset('/images/' . $destination->image) }}">
+                    <div class="col-sm-12">
+                        <div class="card align-center" style="width: 100%;">
+                            <img src="{{ asset('images/' . $destination->image) }}" class="card-img-top img-style"
+                                alt="...">
+                        </div>
+                    </div>
                 @empty
                     <h1 class="display-4 fst-italic alert alert-danger">This destination must have been moved or
                         deleted.</h1>
@@ -77,7 +91,8 @@
                         <h4 class="fst-italic">Destinations</h4>
                         <ol class="list-unstyled mb-0">
                             @forelse ($titles as $title)
-                                <li><a href="{{ url('destination?id=' . $title->id) }}">{{ $title->title }}</a></li>
+                                <li><a href="{{ url('destination?id=' . $title->id) }}">{{ $title->title }}</a>
+                                </li>
 
                             @empty
                                 <li class="alert alert-warning">No Destinations found</li>

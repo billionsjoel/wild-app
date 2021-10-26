@@ -59,6 +59,7 @@ class HomeController extends Controller
     public function createDestination(Request $request)
     {
         $destination = new Destination;
+        $destination->country = request()->country;
         $destination->title = request()->title;
         $destination->body = request()->body;
         // $destination->overview = request()->overview;
