@@ -26,6 +26,7 @@
             object-fit: cover;
             object-position: 50% 50%;
         }
+
     </style>
 </head>
 
@@ -84,7 +85,9 @@
                         <h4 class="fst-italic">About</h4>
                         <p class="mb-0">We can customize this private tour just for you. Any element can be
                             tailored – activities, length, hotels and destinations. Write to us at
-                            proactive-adventures@gmail.com or call us on +254706511644, +64273782346.</p>
+                            <span class="text-danger">proactive-adventures@gmail.com</span> or call us on
+                            +254706511644, +64273782346.
+                        </p>
                     </div>
 
                     <div class="p-4">
