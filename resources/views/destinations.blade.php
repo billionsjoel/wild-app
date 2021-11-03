@@ -14,7 +14,8 @@
 
     {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6271400531285389"
+        crossorigin="anonymous"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <style>
         .img-style {
